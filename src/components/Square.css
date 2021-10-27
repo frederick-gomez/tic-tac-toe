@@ -1,0 +1,17 @@
+.square {
+	background-color: #fff;
+	color: #000;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+	border: none;
+	margin: 2px;
+	font-size: 3rem;
+	font-family: 'Valorant', monospace;
+}
+
+.square:hover {
+	background-color: rgb(10, 10, 10);
+	color: #fff;
+	transition-duration: 0.5s;
+}
