@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Board from './Board';
 import calculateWinner from '../helpers/calculateWinner';
+import Message from './Message';
 
 const Game = () => {
 	const [squares, setSquares] = useState(Array(9).fill(null));
@@ -19,9 +20,14 @@ const Game = () => {
 		setXIsNex(!xIsNext);
 	};
 
+	const resetGame = () => {
+		setSquares(Array(9).fill(null));
+	};
+
 	return (
 		<>
 			<Board squares={squares} onClick={selectHandler} />
+			{winner ? <Message winner={winner} onClick={resetGame} /> : null}
 		</>
 	);
 };
