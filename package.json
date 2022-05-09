@@ -11,7 +11,7 @@
 		"react-scripts": "4.0.3",
 		"web-vitals": "^1.1.2"
 	},
-	"homepage": "https://fg935-dev.github.io/tic-tac-toe/",
+	"homepage": "https://frederick-gomez.github.io/tic-tac-toe/",
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
